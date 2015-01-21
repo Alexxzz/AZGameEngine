@@ -1,2 +1,4 @@
 language: objective-c
+xcode_workspace: AZGameEngine.xcworkspace
+xcode_scheme: AZGameEngine
 
