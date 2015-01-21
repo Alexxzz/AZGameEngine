@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		368ED2F7010380CAD59DA9B8 /* libPods-AZGameEngineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C59D7A671876E9CF26F5C904 /* libPods-AZGameEngineTests.a */; };
+		FFB187921A705F8D0026152C /* TestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB187911A705F8D0026152C /* TestSpec.m */; };
 		FFDACA211A70454400F6FED2 /* AZGameEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFDACA201A70454400F6FED2 /* AZGameEngine.h */; };
 		FFDACA231A70454400F6FED2 /* AZGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDACA221A70454400F6FED2 /* AZGameEngine.m */; };
 		FFDACA291A70454400F6FED2 /* libAZGameEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */; };
@@ -40,6 +41,7 @@
 		13CB6B4CA9A7797151578B0C /* Pods-AZGameEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZGameEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZGameEngineTests/Pods-AZGameEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C59D7A671876E9CF26F5C904 /* libPods-AZGameEngineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AZGameEngineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61AD3D72917C2F4DE6D21D0 /* Pods-AZGameEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZGameEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZGameEngineTests/Pods-AZGameEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFB187911A705F8D0026152C /* TestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSpec.m; sourceTree = "<group>"; };
 		FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAZGameEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDACA201A70454400F6FED2 /* AZGameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZGameEngine.h; sourceTree = "<group>"; };
 		FFDACA221A70454400F6FED2 /* AZGameEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZGameEngine.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FFDACA2D1A70454400F6FED2 /* Supporting Files */,
+				FFB187911A705F8D0026152C /* TestSpec.m */,
 			);
 			path = AZGameEngineTests;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB187921A705F8D0026152C /* TestSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
