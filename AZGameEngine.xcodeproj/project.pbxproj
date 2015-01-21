@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFDACA211A70454400F6FED2 /* AZGameEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFDACA201A70454400F6FED2 /* AZGameEngine.h */; };
+		FFDACA231A70454400F6FED2 /* AZGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDACA221A70454400F6FED2 /* AZGameEngine.m */; };
+		FFDACA291A70454400F6FED2 /* libAZGameEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFDACA2A1A70454400F6FED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFDACA151A70454400F6FED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFDACA1C1A70454400F6FED2;
+			remoteInfo = AZGameEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFDACA1B1A70454400F6FED2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FFDACA211A70454400F6FED2 /* AZGameEngine.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAZGameEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDACA201A70454400F6FED2 /* AZGameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZGameEngine.h; sourceTree = "<group>"; };
+		FFDACA221A70454400F6FED2 /* AZGameEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZGameEngine.m; sourceTree = "<group>"; };
+		FFDACA281A70454400F6FED2 /* AZGameEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZGameEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDACA2E1A70454400F6FED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFDACA1A1A70454400F6FED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDACA251A70454400F6FED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDACA291A70454400F6FED2 /* libAZGameEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFDACA141A70454400F6FED2 = {
+			isa = PBXGroup;
+			children = (
+				FFDACA1F1A70454400F6FED2 /* AZGameEngine */,
+				FFDACA2C1A70454400F6FED2 /* AZGameEngineTests */,
+				FFDACA1E1A70454400F6FED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFDACA1E1A70454400F6FED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */,
+				FFDACA281A70454400F6FED2 /* AZGameEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFDACA1F1A70454400F6FED2 /* AZGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FFDACA201A70454400F6FED2 /* AZGameEngine.h */,
+				FFDACA221A70454400F6FED2 /* AZGameEngine.m */,
+			);
+			path = AZGameEngine;
+			sourceTree = "<group>";
+		};
+		FFDACA2C1A70454400F6FED2 /* AZGameEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFDACA2D1A70454400F6FED2 /* Supporting Files */,
+			);
+			path = AZGameEngineTests;
+			sourceTree = "<group>";
+		};
+		FFDACA2D1A70454400F6FED2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDACA2E1A70454400F6FED2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFDACA1C1A70454400F6FED2 /* AZGameEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDACA311A70454400F6FED2 /* Build configuration list for PBXNativeTarget "AZGameEngine" */;
+			buildPhases = (
+				FFDACA191A70454400F6FED2 /* Sources */,
+				FFDACA1A1A70454400F6FED2 /* Frameworks */,
+				FFDACA1B1A70454400F6FED2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZGameEngine;
+			productName = AZGameEngine;
+			productReference = FFDACA1D1A70454400F6FED2 /* libAZGameEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFDACA271A70454400F6FED2 /* AZGameEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDACA341A70454400F6FED2 /* Build configuration list for PBXNativeTarget "AZGameEngineTests" */;
+			buildPhases = (
+				FFDACA241A70454400F6FED2 /* Sources */,
+				FFDACA251A70454400F6FED2 /* Frameworks */,
+				FFDACA261A70454400F6FED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFDACA2B1A70454400F6FED2 /* PBXTargetDependency */,
+			);
+			name = AZGameEngineTests;
+			productName = AZGameEngineTests;
+			productReference = FFDACA281A70454400F6FED2 /* AZGameEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFDACA151A70454400F6FED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alexander Zahorskyi";
+				TargetAttributes = {
+					FFDACA1C1A70454400F6FED2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FFDACA271A70454400F6FED2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FFDACA181A70454400F6FED2 /* Build configuration list for PBXProject "AZGameEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFDACA141A70454400F6FED2;
+			productRefGroup = FFDACA1E1A70454400F6FED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFDACA1C1A70454400F6FED2 /* AZGameEngine */,
+				FFDACA271A70454400F6FED2 /* AZGameEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFDACA261A70454400F6FED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFDACA191A70454400F6FED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDACA231A70454400F6FED2 /* AZGameEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDACA241A70454400F6FED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFDACA2B1A70454400F6FED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFDACA1C1A70454400F6FED2 /* AZGameEngine */;
+			targetProxy = FFDACA2A1A70454400F6FED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFDACA2F1A70454400F6FED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFDACA301A70454400F6FED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFDACA321A70454400F6FED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FFDACA331A70454400F6FED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FFDACA351A70454400F6FED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AZGameEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFDACA361A70454400F6FED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AZGameEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFDACA181A70454400F6FED2 /* Build configuration list for PBXProject "AZGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDACA2F1A70454400F6FED2 /* Debug */,
+				FFDACA301A70454400F6FED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDACA311A70454400F6FED2 /* Build configuration list for PBXNativeTarget "AZGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDACA321A70454400F6FED2 /* Debug */,
+				FFDACA331A70454400F6FED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFDACA341A70454400F6FED2 /* Build configuration list for PBXNativeTarget "AZGameEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDACA351A70454400F6FED2 /* Debug */,
+				FFDACA361A70454400F6FED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFDACA151A70454400F6FED2 /* Project object */;
+}
