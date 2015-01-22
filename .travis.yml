@@ -1,5 +1,11 @@
 language: objective-c
+before_install:
+- brew unlink xctool
+- brew update
+- brew install xctool
 xcode_workspace: AZGameEngine.xcworkspace
 xcode_scheme: AZGameEngine
 xcode_sdk: iphonesimulator
+notifications:
+  email: false
 
