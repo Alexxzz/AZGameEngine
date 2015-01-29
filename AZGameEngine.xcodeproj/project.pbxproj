@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		368ED2F7010380CAD59DA9B8 /* libPods-AZGameEngineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C59D7A671876E9CF26F5C904 /* libPods-AZGameEngineTests.a */; };
+		FF1EBCF71A7AE19B00282881 /* AZScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1EBCF61A7AE19B00282881 /* AZScene.m */; };
+		FF1EBCF91A7AE1BD00282881 /* AZSceneSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1EBCF81A7AE1BD00282881 /* AZSceneSpec.m */; };
+		FF1EBCFB1A7AE4E100282881 /* AZGameEngineSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1EBCFA1A7AE4E100282881 /* AZGameEngineSpec.m */; };
 		FF989E6A1A758B7700EB8F83 /* AZEntitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FF989E691A758B7700EB8F83 /* AZEntitySpec.m */; };
 		FFB187951A72FC6E0026152C /* AZComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB187941A72FC6E0026152C /* AZComponent.m */; };
 		FFB187981A72FC8C0026152C /* AZEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB187971A72FC8C0026152C /* AZEntity.m */; };
@@ -44,6 +47,10 @@
 		13CB6B4CA9A7797151578B0C /* Pods-AZGameEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZGameEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZGameEngineTests/Pods-AZGameEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C59D7A671876E9CF26F5C904 /* libPods-AZGameEngineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AZGameEngineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61AD3D72917C2F4DE6D21D0 /* Pods-AZGameEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZGameEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZGameEngineTests/Pods-AZGameEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF1EBCF51A7AE19B00282881 /* AZScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZScene.h; sourceTree = "<group>"; };
+		FF1EBCF61A7AE19B00282881 /* AZScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZScene.m; sourceTree = "<group>"; };
+		FF1EBCF81A7AE1BD00282881 /* AZSceneSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZSceneSpec.m; sourceTree = "<group>"; };
+		FF1EBCFA1A7AE4E100282881 /* AZGameEngineSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZGameEngineSpec.m; sourceTree = "<group>"; };
 		FF989E691A758B7700EB8F83 /* AZEntitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZEntitySpec.m; sourceTree = "<group>"; };
 		FFB187931A72FC6E0026152C /* AZComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZComponent.h; sourceTree = "<group>"; };
 		FFB187941A72FC6E0026152C /* AZComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZComponent.m; sourceTree = "<group>"; };
@@ -120,6 +127,8 @@
 			children = (
 				FFDACA201A70454400F6FED2 /* AZGameEngine.h */,
 				FFDACA221A70454400F6FED2 /* AZGameEngine.m */,
+				FF1EBCF51A7AE19B00282881 /* AZScene.h */,
+				FF1EBCF61A7AE19B00282881 /* AZScene.m */,
 				FFB187961A72FC8C0026152C /* AZEntity.h */,
 				FFB187971A72FC8C0026152C /* AZEntity.m */,
 				FFB187931A72FC6E0026152C /* AZComponent.h */,
@@ -135,6 +144,8 @@
 			children = (
 				FFDACA2D1A70454400F6FED2 /* Supporting Files */,
 				FF989E691A758B7700EB8F83 /* AZEntitySpec.m */,
+				FF1EBCF81A7AE1BD00282881 /* AZSceneSpec.m */,
+				FF1EBCFA1A7AE4E100282881 /* AZGameEngineSpec.m */,
 			);
 			path = AZGameEngineTests;
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1EBCF71A7AE19B00282881 /* AZScene.m in Sources */,
 				FFB187981A72FC8C0026152C /* AZEntity.m in Sources */,
 				FFB1879B1A72FC9F0026152C /* AZSystem.m in Sources */,
 				FFB187951A72FC6E0026152C /* AZComponent.m in Sources */,
@@ -281,6 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1EBCF91A7AE1BD00282881 /* AZSceneSpec.m in Sources */,
+				FF1EBCFB1A7AE4E100282881 /* AZGameEngineSpec.m in Sources */,
 				FF989E6A1A758B7700EB8F83 /* AZEntitySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,7 +63,6 @@ describe(@"AZEntity", ^{
     it(@"should return component by its class", ^{
         TestComponent *component = [[TestComponent alloc] init];
         [entity addComponent:component];
-        
         expect([entity componentWithClass:[TestComponent class]]).to.equal(component);
         expect([entity componentWithClass:[AZComponent class]]).to.beNil;
         expect([entity componentWithClass:nil]).to.beNil;

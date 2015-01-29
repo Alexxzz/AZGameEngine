@@ -8,6 +8,11 @@
 
 #import "AZEntity.h"
 
+
+@interface AZEntity ()
+@property (nonatomic, strong) NSArray *components;
+@end
+
 @implementation AZEntity
 
 - (instancetype)init
@@ -24,7 +29,7 @@
     if ([self.components containsObject:component]) {
         return;
     }
-    _components = [self.components arrayByAddingObject:component];
+    self.components = [self.components arrayByAddingObject:component];
 }
 
 
@@ -37,7 +42,7 @@
     
     NSArray *firstSubArray = [self.components subarrayWithRange:NSMakeRange(0, indexOfObject)];
     NSArray *secondSubArray = [self.components subarrayWithRange:NSMakeRange(indexOfObject + 1, self.components.count - indexOfObject - 1)];
-    _components = [firstSubArray arrayByAddingObjectsFromArray:secondSubArray];
+    self.components = [firstSubArray arrayByAddingObjectsFromArray:secondSubArray];
 }
 
 - (AZComponent *)componentWithClass:(Class)componentClass
