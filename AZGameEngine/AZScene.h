@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@import SpriteKit;
+
+
 @class AZGameEngine;
 @class AZEntity;
 
-@interface AZScene : NSObject
+@interface AZScene : SKScene
 
 @property (nonatomic, readonly) AZGameEngine *gameEngine;
 @property (nonatomic, readonly) NSSet *entities;
