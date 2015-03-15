@@ -7,6 +7,8 @@
 //
 
 #import "AZGameEngine.h"
+#import "AZSystem.h"
+#import "AZScene.h"
 
 @import SpriteKit;
 
@@ -54,6 +56,18 @@
     NSArray *firstSubArray = [self.systems subarrayWithRange:NSMakeRange(0, indexOfObject)];
     NSArray *secondSubArray = [self.systems subarrayWithRange:NSMakeRange(indexOfObject + 1, self.systems.count - indexOfObject - 1)];
     self.systems = [firstSubArray arrayByAddingObjectsFromArray:secondSubArray];
+}
+
+- (void)update:(NSTimeInterval)timeInterval
+{
+    [self.systems enumerateObjectsUsingBlock:^(AZSystem *system, NSUInteger idx, BOOL *stop) {
+        [system update:timeInterval];
+    }];
+}
+
+- (NSSet *)entitiesWithComponentsClasses:(NSArray *)classes
+{
+    return [self.currentScene entitiesWithComponentsClasses:classes];
 }
 
 @end

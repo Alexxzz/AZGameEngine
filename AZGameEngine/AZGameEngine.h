@@ -25,4 +25,8 @@
 - (void)addSystem:(AZSystem *)system;
 - (void)removeSystem:(AZSystem *)system;
 
+- (void)update:(NSTimeInterval)timeInterval;
+
+- (NSSet *)entitiesWithComponentsClasses:(NSArray *)classes;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "Specta.h"
 #import "Expecta.h"
+#import "OCMock.h"
 
 #import "AZGameEngine.h"
 
@@ -61,7 +62,7 @@ describe(@"AZGameEngine", ^{
         expect(engine.systems.count).equal(1);
     });
     
-    it(@"should not contain system after remove calles", ^{
+    it(@"should not contain system after remove called", ^{
         AZSystem *system1 = [[AZSystem alloc] init];
         AZSystem *system2 = [[AZSystem alloc] init];
         AZSystem *system3 = [[AZSystem alloc] init];
@@ -72,6 +73,37 @@ describe(@"AZGameEngine", ^{
         [engine removeSystem:system2];
         
         expect(engine.systems).notTo.contain(system2);
+    });
+    
+    it(@"should update all systems when update method is called", ^{
+        AZSystem *system1 = OCMClassMock([AZSystem class]);
+        AZSystem *system2 = OCMClassMock([AZSystem class]);
+        AZSystem *system3 = OCMClassMock([AZSystem class]);
+        
+        [engine addSystem:system1];
+        [engine addSystem:system2];
+        [engine addSystem:system3];
+        
+        [engine update:100];
+        
+        OCMVerify([system1 update:100]);
+        OCMVerify([system2 update:100]);
+        OCMVerify([system3 update:100]);
+    });
+    
+    it(@"should return entities with components of given classes", ^{
+        AZScene *scene = OCMClassMock([AZScene class]);
+        
+        [engine presentScene:scene];
+        NSArray  *classes = @[@"class1", @"class2"];
+        [engine entitiesWithComponentsClasses:classes];
+        
+        OCMVerify([scene entitiesWithComponentsClasses:classes]);
+    });
+    
+    it(@"should not crash when entitiesWithComponentsClasses called and there is no currentScene", ^{
+        NSArray  *classes = @[@"class1", @"class2"];
+        [engine entitiesWithComponentsClasses:classes];
     });
 });
 

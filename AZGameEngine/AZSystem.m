@@ -10,4 +10,9 @@
 
 @implementation AZSystem
 
+- (void)update:(NSTimeInterval)timeInterval
+{
+    
+}
+
 @end

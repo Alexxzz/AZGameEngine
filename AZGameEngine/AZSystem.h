@@ -10,4 +10,6 @@
 
 @interface AZSystem : NSObject
 
+- (void)update:(NSTimeInterval)timeInterval;
+
 @end
