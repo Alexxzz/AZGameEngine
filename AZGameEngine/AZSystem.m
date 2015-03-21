@@ -10,9 +10,21 @@
 
 @implementation AZSystem
 
-- (void)update:(NSTimeInterval)timeInterval
+- (instancetype)initWithEngine:(AZGameEngine *)engine
+             componentsClasses:(NSArray *)classes
 {
-    
+    self = [super init];
+    if (self) {
+        _engine = engine;
+        _componentsClasses = classes;
+    }
+    return self;
+}
+
+- (void)updateEntities:(NSSet *)entities
+      withTimeInterval:(NSTimeInterval)timeInterval;
+{
+    NSAssert(YES, @"Implement in subclass");
 }
 
 @end

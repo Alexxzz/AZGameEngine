@@ -15,8 +15,9 @@
 
 @interface AZGameEngine ()
 @property (nonatomic, strong) SKView *view;
-@property (nonatomic, strong) AZScene *currentScene;
 @property (nonatomic, strong) NSArray *systems;
+@property (nonatomic, strong) AZScene *currentScene;
+
 @end
 
 @implementation AZGameEngine
@@ -61,7 +62,8 @@
 - (void)update:(NSTimeInterval)timeInterval
 {
     [self.systems enumerateObjectsUsingBlock:^(AZSystem *system, NSUInteger idx, BOOL *stop) {
-        [system update:timeInterval];
+        NSSet *entities = [self.currentScene entitiesWithComponentsClasses:system.componentsClasses];
+        [system updateEntities:entities withTimeInterval:timeInterval];
     }];
 }
 

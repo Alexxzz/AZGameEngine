@@ -8,12 +8,13 @@
 
 #import "Specta.h"
 #import "Expecta.h"
-#import "OCMock.h"
+#import <OCMock/OCMock.h>
 
 #import "AZGameEngine.h"
 
 #import "AZScene.h"
 #import "AZSystem.h"
+#import "AZEntity.h"
 
 
 @import SpriteKit;
@@ -86,9 +87,29 @@ describe(@"AZGameEngine", ^{
         
         [engine update:100];
         
-        OCMVerify([system1 update:100]);
-        OCMVerify([system2 update:100]);
-        OCMVerify([system3 update:100]);
+        OCMVerify([system1 updateEntities:nil withTimeInterval:100]);
+        OCMVerify([system2 updateEntities:nil withTimeInterval:100]);
+        OCMVerify([system3 updateEntities:nil withTimeInterval:100]);
+    });
+    
+    it(@"should update system with corresponding entities", ^{
+        AZEntity *entity1 = [[AZEntity alloc] init];
+        AZEntity *entity2 = [[AZEntity alloc] init];
+        NSSet *entities = [NSSet setWithArray:@[entity1, entity2]];
+        NSArray *componentsClasses = @[@"component1", @"component2"];
+        
+        AZSystem *system1 = OCMClassMock([AZSystem class]);
+        [OCMStub([system1 componentsClasses]) andReturn:componentsClasses];
+        [engine addSystem:system1];
+        
+        AZScene *scene = OCMClassMock([AZScene class]);
+        [OCMStub([scene entitiesWithComponentsClasses:componentsClasses]) andReturn:entities];
+        
+        [engine presentScene:scene];
+        
+        [engine update:100];
+        
+        OCMVerify([system1 updateEntities:entities withTimeInterval:100]);
     });
     
     it(@"should return entities with components of given classes", ^{

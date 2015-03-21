@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AZSystem : NSObject
 
-- (void)update:(NSTimeInterval)timeInterval;
+@class AZGameEngine;
 
+@interface AZSystem: NSObject
+@property (nonatomic, readonly) NSArray *componentsClasses;
+@property (nonatomic, readonly) AZGameEngine *engine;
+
+- (instancetype)initWithEngine:(AZGameEngine *)engine
+             componentsClasses:(NSArray *)classes;
+
+- (void)updateEntities:(NSSet *)entities
+      withTimeInterval:(NSTimeInterval)timeInterval;
 @end
