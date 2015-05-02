@@ -9,6 +9,7 @@
 #import "AZScene.h"
 
 #import "AZEntity.h"
+#import "AZGameEngine.h"
 
 
 @implementation AZScene
@@ -57,6 +58,11 @@
         }
         return contains;
     }];
+}
+
+- (void)update:(NSTimeInterval)currentTime
+{
+    [self.gameEngine update:currentTime];
 }
 
 @end

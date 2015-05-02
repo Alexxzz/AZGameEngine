@@ -13,7 +13,7 @@
 
 @interface AZSystem: NSObject
 @property (nonatomic, readonly) NSArray *componentsClasses;
-@property (nonatomic, readonly) AZGameEngine *engine;
+@property (nonatomic, readonly, weak) AZGameEngine *engine;
 
 - (instancetype)initWithEngine:(AZGameEngine *)engine
              componentsClasses:(NSArray *)classes;

@@ -16,7 +16,7 @@
 
 @interface AZScene : SKScene
 
-@property (nonatomic, readonly) AZGameEngine *gameEngine;
+@property (nonatomic, readonly, weak) AZGameEngine *gameEngine;
 @property (nonatomic, readonly) NSSet *entities;
 
 - (instancetype)initWithEngine:(AZGameEngine *)gameEngine;

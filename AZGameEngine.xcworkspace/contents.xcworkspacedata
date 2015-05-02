@@ -5,6 +5,9 @@
       location = "group:AZGameEngine.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:TestGame/TestGame.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

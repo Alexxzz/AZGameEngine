@@ -35,6 +35,7 @@
 - (void)presentScene:(AZScene *)scene
 {
     self.currentScene = scene;
+    scene.size = self.view.bounds.size;
     [self.view presentScene:(SKScene *)scene];
 }
 
